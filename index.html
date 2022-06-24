@@ -3,33 +3,37 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>dmgl</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
-            (function(d,s) { 
-              if(!d.getElementById('rwgps-sdk')) {
-                var el = d.getElementsByTagName(s)[0],
-                    js = d.createElement(s);
-                js.id = 'rwgps-sdk';
-                js.src = "//ridewithgps.com/javascripts/sdk.js?1655334309820";
-                el.parentNode.insertBefore(js, el);
-              }
-            })(document, 'script');    
+        (function(d,s) {
+        if(!d.getElementById('rwgps-sdk')) {
+        var el = d.getElementsByTagName(s)[0],
+        js = d.createElement(s);
+        js.id = 'rwgps-sdk';
+        js.src = "//ridewithgps.com/javascripts/sdk.js?1655334309820";
+        el.parentNode.insertBefore(js, el);
+        }
+        })(document, 'script');
         </script>
     </head>
     <body>
-        <p>
-            <a href="https://stackexchange.com/users/3757971"><img src="https://stackexchange.com/users/flair/3757971.png" width="300" height="58"></a>
-        </p>
-        <details>
-            <summary>
-            Activity
-            </summary>
-            <p>
-                <a class="rwgps-widget" href="https://ridewithgps.com/users/4885306" data-rwgps-metric="1" data-rwgps-width="300" data-rwgps-user-id="4885306" data-rwgps-include="year"></a>
-                <br>
-                <a style="display:inline-block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href='https://strava.com/athletes/45889481' target="_clean">
-                <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
-                </a>
-            </p>
-        </details>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+                <div class="mx-auto" style="width: 80%; margin-top: 10%; margin-bottom: 10%" >
+                    <a href="https://stackexchange.com/users/3757971"><img src="https://stackexchange.com/users/flair/3757971.png" width="100%" align="center"></a>
+                    <a data-bs-toggle="collapse" href="#sport" role="button" aria-expanded="false" aria-controls="sport">Sport activity</a>
+                    <div class="collapse" id="sport">
+                        <div class="card">
+                            <a class="rwgps-widget" href="https://ridewithgps.com/users/4885306" data-rwgps-metric="1" data-rwgps-user-id="4885306" data-rwgps-include="year" width="100%" align="center"></a>
+                            <br>
+                            <a style="display:inline-block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href='https://strava.com/athletes/45889481' target="_clean">
+                                <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
